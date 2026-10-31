@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-10-29T02:12:22.882632+00:00",
+  "target_met": true,
+  "selected_count": 18,
+  "configured_sources": 30,
+  "final_enabled_sources": 18,
+  "counts": {
+    "S01": {
+      "official": 1,
+      "tourist": 5
+    },
+    "S02": {
+      "official": 1,
+      "tourist": 5
+    },
+    "S03": {
+      "official": 1,
+      "tourist": 5
+    }
+  },
+  "gaps": [],
+  "pending_merge_ids": [],
+  "network_requests_this_batch": 0,
+  "browser_saved_html_offline_documents": [
+    "S01-O-001",
+    "S03-O-002"
+  ],
+  "previously_crawled_tourist": "S02-T-007",
+  "original_fifteen_sha256": "48b890557e2e777c27e3f03f6cfeee282c5c87daa2abf32b5c80776fd24c518f",
+  "original_fifteen_byte_count": 176635,
+  "preserved_as_exact_prefix": true,
+  "backup_batch": "data\\raw\\batches\\offline_complete_20261029T021127917585Z",
+  "offline_provenance": "data\\raw\\batches\\offline_complete_20261029T021127917585Z\\offline_provenance.json",
+  "selected_ids": [
+    "S01-T-001",
+    "S02-T-001",
+    "S03-T-001",
+    "S02-O-002",
+    "S01-T-002",
+    "S01-T-004",
+    "S01-T-005",
+    "S01-T-006",
+    "S02-T-002",
+    "S02-T-003",
+    "S02-T-005",
+    "S03-T-002",
+    "S03-T-003",
+    "S03-T-004",
+    "S03-T-005",
+    "S01-O-001",
+    "S03-O-002",
+    "S02-T-007"
+  ],
+  "raw_text_sha256": {
+    "S01-T-001": "62204a8a4dfeeed795d33390015c3bf96aaed616a66fe31a58568f6452558a39",
+    "S02-T-001": "cd1838f0eaaadbb5a5e9c1c90e8d5649bdfa29feb8d0b5f3025db30233e8c7f4",
+    "S03-T-001": "5f69bdc8a808a76fd0d03f96baf0005de7b40404c531e100f2f5bda03ed1595f",
+    "S02-O-002": "18ca54339389ca09fc80dbfae115e2225030df0d42cf0a772a4956f73c674fa4",
+    "S01-T-002": "5859726ad83aae4b13906675b57c3aab8b01a92768277c8a6922eef614f66f97",
+    "S01-T-004": "571f553dbbef15cf9bb4753de8ff5c5432f6e68e0f1a5749d0f8fdae4415103f",
+    "S01-T-005": "f3e82601fe693b2551cc05e8080cbc9a5826faf56a90d8cccc2a863a9bddc0e7",
+    "S01-T-006": "821344e52706132b40a4c078459df70760e3a8f21a80db1571d1f89256a29fe3",
+    "S02-T-002": "c0681ca83ee2a0d64a9c24e23537cff0dade23351afdf670b832fefb8de6d85b",
+    "S02-T-003": "62f291c5c2c32f55b15df2ddd4f7c1220a219471f08bf9ee46df307fbbbd89c2",
+    "S02-T-005": "adc15d4c1a51c79ca4e4bb84b69967df25db9b8b51dfdd59f4ca16a4aab1180b",
+    "S03-T-002": "f89015e2be160f09d33a43b673e6aa8e1a975b47af2bb4ad3587b8a64aa219f7",
+    "S03-T-003": "eb8dabf65b4c380a3d02dadf25f2f7c534aad678f7de6bd0f8933885245423b2",
+    "S03-T-004": "2d954dc8d140569341d34548dd8b371345d5b93578cc2dbfe6a6a7140a6cedea",
+    "S03-T-005": "a462bdc640f5a408e9bd40417917e4741910062cb6703bf604a702356f2f6920",
+    "S01-O-001": "177aaa56b8a45020223c5c65ee0097fe0ac867b5dde6eb9495e4f43bbdae5558",
+    "S03-O-002": "a9b326495bc3370c28ed3743877aa0005bcd5484e35bd20276cb358669f420a1",
+    "S02-T-007": "959c21405cee58e1a2ca42b6598a7e5ff1649548898376b0e7dbc7b52d6d9df7"
+  }
+}

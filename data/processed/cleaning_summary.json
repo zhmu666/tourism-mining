@@ -1,0 +1,47 @@
+{
+  "rule_version": "exp1-frozen-1",
+  "input_file": "D:\\tourism-mining\\data\\raw\\selected_documents.jsonl",
+  "output_file": "D:\\tourism-mining\\data\\processed\\documents.csv",
+  "python_version": "3.12.7",
+  "input_sha256": "b56d981b8437772f445d66e6d08121dfc54b5738562f1673f638d7543a56f31b",
+  "input_records": 18,
+  "parsed_records": 18,
+  "output_records": 18,
+  "excluded_records": 0,
+  "missing_fields": {
+    "doc_id": 0,
+    "scenic_id": 0,
+    "scenic_name": 0,
+    "source_type": 0,
+    "source_name": 0,
+    "source_url": 0,
+    "title": 0,
+    "raw_text": 0
+  },
+  "empty_raw_records": 0,
+  "empty_clean_records": 0,
+  "distribution": {
+    "S01": {
+      "official": 1,
+      "tourist": 5
+    },
+    "S02": {
+      "official": 1,
+      "tourist": 5
+    },
+    "S03": {
+      "official": 1,
+      "tourist": 5
+    }
+  },
+  "raw_characters": 64962,
+  "output_raw_characters": 64962,
+  "clean_characters": 61786,
+  "removed_characters": 3176,
+  "reduction_percent": 4.889,
+  "duplicate_relations": 0,
+  "duplicate_documents": 0,
+  "review_documents": 4,
+  "target_met": true,
+  "conclusion": "通过（保留报告列明的人工复核事项）"
+}

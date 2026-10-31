@@ -1,0 +1,264 @@
+{
+  "S01-O-001": {
+    "quality_decision": "accepted",
+    "selected_for_final": true,
+    "quality_flags": [
+      "browser_saved_html_offline",
+      "historical_route_information"
+    ],
+    "reason": "浏览器保存HTML后离线提取；本次没有HTTP请求，HTTP状态及抓取时间未知。标题来自ArticleTitle，正文取明确文章容器，路线与交通节点完整，导航页脚不在正文。发布机构：广州市白云山风景名胜区管理局。旧HTTP执行历史保留在previous_*列及原crawl_report.json。"
+  },
+  "S01-T-001": {
+    "quality_decision": "accepted",
+    "selected_for_final": true,
+    "quality_flags": [
+      "editorial_repost",
+      "related_comments_noise",
+      "historical_route_facts_to_verify"
+    ],
+    "reason": "已发布游客原帖，经内容团队整理；主体有南门徒步、能仁寺、摩星岭、缆车下山的完整顺序和个人感受。附评论及相关推荐，原样保留供后续清洗；路线事实仍需核实，不等同于官方实用指南。"
+  },
+  "S02-O-001": {
+    "quality_decision": "not_evaluated",
+    "selected_for_final": false,
+    "quality_flags": [
+      "old_official_disabled"
+    ],
+    "reason": "旧官方来源按既有约定停用，未在本次两批采集中请求，不从更早历史材料补算成功。"
+  },
+  "S02-T-001": {
+    "quality_decision": "accepted",
+    "selected_for_final": true,
+    "quality_flags": [
+      "article_fragment",
+      "historical_information"
+    ],
+    "reason": "动物园和大马戏两日亲历片段，包含北门入园、小火车、天鹅湖至熊猫乐园步行、两条缆车及大马戏安排，核心景区游览段落完整；保留原ID及网址。"
+  },
+  "S03-O-001": {
+    "quality_decision": "not_evaluated",
+    "selected_for_final": false,
+    "quality_flags": [
+      "old_official_disabled"
+    ],
+    "reason": "旧官方来源按既有约定停用，未在本次两批采集中请求，不从更早历史材料补算成功。"
+  },
+  "S03-T-001": {
+    "quality_decision": "accepted",
+    "selected_for_final": true,
+    "quality_flags": [
+      "multi_scenic",
+      "article_fragment",
+      "historical_information"
+    ],
+    "reason": "保留原ID网址；记载汤口、云谷索道上山、始信峰、北海、光明顶，次日白云宾馆经鳌鱼峰、百步云梯、迎客松至玉屏索道；含2018亲历、住宿和上下山交通。"
+  },
+  "S01-O-002": {
+    "quality_decision": "unavailable",
+    "selected_for_final": false,
+    "quality_flags": [
+      "http_access_restricted"
+    ],
+    "reason": "真实HTTP 403，未取得可验收正文；未绕过限制或重复请求。"
+  },
+  "S01-O-003": {
+    "quality_decision": "unavailable",
+    "selected_for_final": false,
+    "quality_flags": [
+      "http_access_restricted"
+    ],
+    "reason": "真实HTTP 403，未取得可验收正文；未绕过限制或重复请求。"
+  },
+  "S01-O-004": {
+    "quality_decision": "unavailable",
+    "selected_for_final": false,
+    "quality_flags": [
+      "http_access_restricted"
+    ],
+    "reason": "真实HTTP 403，未取得可验收正文；未绕过限制或重复请求。"
+  },
+  "S02-O-002": {
+    "quality_decision": "accepted",
+    "selected_for_final": true,
+    "quality_flags": [
+      "generic_title",
+      "multi_park"
+    ],
+    "reason": "来源为长隆官方域名；8281字符正文从行程推荐开始，Day2完整列出小火车、青龙山、考拉园、熊猫乐园及下午缆车等顺序，并展开分站讲解。标题泛化为长隆，但正文不是身份证公告。"
+  },
+  "S03-O-002": {
+    "quality_decision": "accepted",
+    "selected_for_final": true,
+    "quality_flags": [
+      "browser_saved_html_offline",
+      "historical_route_information"
+    ],
+    "reason": "浏览器保存HTML后离线提取；本次没有HTTP请求，HTTP状态及抓取时间未知。标题来自ArticleTitle，正文取明确文章容器，路线与交通节点完整，导航页脚不在正文。发布机构：黄山市人民政府办公室；内容来源：黄山风景区管委会。旧HTTP执行历史保留在previous_*列及原crawl_report.json。"
+  },
+  "S01-T-002": {
+    "quality_decision": "accepted",
+    "selected_for_final": true,
+    "quality_flags": [
+      "platform_notice_noise"
+    ],
+    "reason": "记录公交到西门、翠竹园、黄婆洞水库、明珠楼、桃花涧至梅花园门的连续亲历行程，有步行用时和环湖经历。"
+  },
+  "S01-T-003": {
+    "quality_decision": "rejected",
+    "selected_for_final": false,
+    "quality_flags": [
+      "vehicle_promotion_dominant"
+    ],
+    "reason": "开篇大量UNI-T功能、内饰、驾驶与油耗推广，汽车内容占主要篇幅；虽含能仁寺和摩星岭游览段落，作为景区程序性知识主样本相关性低，已有5篇更集中的合格替代。"
+  },
+  "S01-T-004": {
+    "quality_decision": "accepted",
+    "selected_for_final": true,
+    "quality_flags": [
+      "multi_scenic",
+      "platform_notice_noise"
+    ],
+    "reason": "广州顺德多景区文章，但白云山独立段落完整：南门索道上山、山顶广场到摩星岭、碑林九龙泉、想亭、索道返回；有交通费用、步行用时和亲历评价。"
+  },
+  "S01-T-005": {
+    "quality_decision": "accepted",
+    "selected_for_final": true,
+    "quality_flags": [
+      "multi_scenic",
+      "platform_notice_noise"
+    ],
+    "reason": "白云山篇幅充分：西门、梅花谷、黄婆洞水库、明珠楼、桃花涧、摩星岭、碑林、能仁寺等连续游览经历，并描述雾天观景和出入口；保留其他景区原文。"
+  },
+  "S01-T-006": {
+    "quality_decision": "accepted",
+    "selected_for_final": true,
+    "quality_flags": [
+      "published_itinerary",
+      "platform_notice_noise"
+    ],
+    "reason": "已发布两日游D1行程，含9点索道、10点摩星岭、11点返回、14点云台花园及麓湖晚餐散步，交通、顺序、用时具体。"
+  },
+  "S02-T-002": {
+    "quality_decision": "accepted",
+    "selected_for_final": true,
+    "quality_flags": [
+      "platform_notice_noise"
+    ],
+    "reason": "完整亲历：北门到小火车，再进入青龙山、雨林仙踪、金蛇秘境、百虎山等步行游览，含缆车和动物互动观感。"
+  },
+  "S02-T-003": {
+    "quality_decision": "accepted",
+    "selected_for_final": true,
+    "quality_flags": [
+      "multi_scenic",
+      "limited_target_section",
+      "rental_car_mention"
+    ],
+    "reason": "多景区亲子游，Day3明确记载北门小火车、青龙山、白虎山、科莫多龙、考拉园、熊猫乐园缆车、巡游和4D影院顺序，以及排队约半小时；对应景区段落短但具体，非仅一句介绍。"
+  },
+  "S02-T-004": {
+    "quality_decision": "rejected",
+    "selected_for_final": false,
+    "quality_flags": [
+      "incomplete_extraction"
+    ],
+    "reason": "仅提取85字符出游动机和引言，没有动物世界游览顺序、交通或具体经历；HTTP 200不代表正文完整。未重新请求或借用未提取的内容。"
+  },
+  "S02-T-005": {
+    "quality_decision": "accepted",
+    "selected_for_final": true,
+    "quality_flags": [
+      "multi_park",
+      "platform_notice_noise"
+    ],
+    "reason": "四园攻略中野生动物园专节充分：北门小火车环线、青龙山和非洲长廊、熊猫考拉百虎山及缆车站点顺序，含实际拥挤程度和游览体验。"
+  },
+  "S02-T-006": {
+    "quality_decision": "rejected",
+    "selected_for_final": false,
+    "quality_flags": [
+      "hotel_promotion"
+    ],
+    "reason": "主体为市桥轻居酒店地理位置、设施、停车洗衣与订房卖点推广；动物世界仅为酒店周边路线中的短段建议，没有足够完整的景区亲历行程。单独标记酒店推广，原文不删除。"
+  },
+  "S03-T-002": {
+    "quality_decision": "accepted",
+    "selected_for_final": true,
+    "quality_flags": [
+      "article_fragment",
+      "platform_notice_noise"
+    ],
+    "reason": "北海景区亲历：索道后往北海、始信峰、黑虎松、梦笔生花、猴子观海至西海饭店和丹霞峰，含10:30补给与实际封路观察。"
+  },
+  "S03-T-003": {
+    "quality_decision": "accepted",
+    "selected_for_final": true,
+    "quality_flags": [
+      "platform_notice_noise"
+    ],
+    "reason": "带近70岁长辈的两日亲历，黄山北换乘、慈光阁玉屏索道、迎客松、一线天、光明顶和山上住宿，次日西海大峡谷、飞来石、始信峰、云谷索道下山，顺序与耗时明确。"
+  },
+  "S03-T-004": {
+    "quality_decision": "accepted",
+    "selected_for_final": true,
+    "quality_flags": [
+      "historical_information",
+      "hotel_recommendations_present"
+    ],
+    "reason": "有明确冬游亲历和实际4.5小时路线：太平索道、排云亭、飞来石、光明顶、鳌鱼峰、迎客松、玉屏索道；酒店推荐为附加部分，景区行程充分，不按酒店关键词直接排除。"
+  },
+  "S03-T-005": {
+    "quality_decision": "accepted",
+    "selected_for_final": true,
+    "quality_flags": [
+      "climate_overview",
+      "published_route_guide",
+      "no_personal_trip_date",
+      "public_account_promotion"
+    ],
+    "reason": "不是只有气候介绍：后半部提供完整两日游（云谷寺、始信峰、狮子峰、排云亭、光明顶；次日鳌鱼峰、玉屏楼、迎客松下山）及一日游，明确索道、转移、住宿和餐饮安排。按已发布的具体行程信息标准接受，不声称为已核实的个人亲历；气候、公众号推广和历史信息保留标记。"
+  },
+  "S03-T-006": {
+    "quality_decision": "needs_review",
+    "selected_for_final": false,
+    "quality_flags": [
+      "literary_fiction_cue",
+      "published_route_guide"
+    ],
+    "reason": "有详细云谷索道、始信峰、光明顶、鳌鱼峰、莲花峰、迎客松路线，但开头自称内容全靠编，结尾称还可以继续编。可能为文学表达，不能据此断定虚假，也不能确认亲历；作为真实性存疑备用，不纳入最终集。"
+  },
+  "S01-O-005": {
+    "quality_decision": "unavailable",
+    "selected_for_final": false,
+    "quality_flags": [
+      "http_access_restricted"
+    ],
+    "reason": "真实HTTP 403，未取得可验收正文；未绕过限制或重复请求。"
+  },
+  "S01-O-006": {
+    "quality_decision": "unavailable",
+    "selected_for_final": false,
+    "quality_flags": [
+      "http_access_restricted"
+    ],
+    "reason": "真实HTTP 403，未取得可验收正文；未绕过限制或重复请求。"
+  },
+  "S03-O-003": {
+    "quality_decision": "unavailable",
+    "selected_for_final": false,
+    "quality_flags": [
+      "http_access_restricted"
+    ],
+    "reason": "真实HTTP 412，未取得可验收正文；未绕过限制或重复请求。"
+  },
+  "S02-T-007": {
+    "quality_decision": "accepted",
+    "selected_for_final": true,
+    "quality_flags": [
+      "actual_visit",
+      "historical_information",
+      "platform_notice_noise"
+    ],
+    "reason": "已保存HTTP 200的真实亲子自驾游记，含南门包车猛兽区转步行区、考拉熊猫、15点花车巡游、缆车、白虎跳水及侏罗纪森林实际经历；原文逐字节从既有单条批次加入，未重新请求。"
+  }
+}

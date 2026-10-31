@@ -1,0 +1,7 @@
+﻿doc_id,input_line,issue_type,reason,action
+S01-T-001,1,source_quality_review,平台整理过的游客原帖，非独立核实的亲历证据,review
+S01-T-001,1,source_quality_review,原游记路线事实需人工核实，清洗不纠正事实,review
+S02-O-002,4,source_quality_review,原题泛化为站点名称，按接口保留不补写,review
+S02-T-003,10,source_quality_review,目标景区段落较短，保留多景区原文，不作段落过滤,review
+S03-T-005,15,source_quality_review,包含气候综述与具体路线，保留非模板正文,review
+S03-T-005,15,source_quality_review,无法确认个人出游日期，不把推荐行程当已核实亲历,review

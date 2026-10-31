@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+.venv/
+data/raw/.tmp-*
+
+# Local exploratory crawler artifacts
+/probe_results.json
+/probe_texts/
+/probe_urls.py
+
+# Historical runs and backups
+/data/processed/history/
+/data/raw/history/
+/data/raw/batches/
+/data/raw/diagnostics/
+
+# Saved HTML snapshots (raw extracted text is retained separately)
+/data/raw/html/
+
+# Local temporary batch metadata
+/data/raw/active_*.txt
+/data/raw/history_manifest_before_final.json
