@@ -1,0 +1,66 @@
+test_captcha (test_crawl_sources.CrawlerTests.test_captcha) ... ok
+test_dry_run_limit_disabled (test_crawl_sources.CrawlerTests.test_dry_run_limit_disabled) ... ok
+test_duplicate_url (test_crawl_sources.CrawlerTests.test_duplicate_url) ... ok
+test_extract_and_preserve_route (test_crawl_sources.CrawlerTests.test_extract_and_preserve_route) ... ok
+test_http_errors_no_retry_restrictions (test_crawl_sources.CrawlerTests.test_http_errors_no_retry_restrictions) ... ok
+test_jsonl_and_rerun_backup (test_crawl_sources.CrawlerTests.test_jsonl_and_rerun_backup) ... ok
+test_no_whole_body_fallback (test_crawl_sources.CrawlerTests.test_no_whole_body_fallback) ... ok
+test_parse_failure (test_crawl_sources.CrawlerTests.test_parse_failure) ... ok
+test_timeout_and_retry (test_crawl_sources.CrawlerTests.test_timeout_and_retry) ... ok
+test_transient_success (test_crawl_sources.CrawlerTests.test_transient_success) ... ok
+test_validation (test_crawl_sources.CrawlerTests.test_validation) ... ok
+test_deterministic (test_exp1_preprocess.CleaningRulesTests.test_deterministic) ... ok
+test_entities_and_plain_angles (test_exp1_preprocess.CleaningRulesTests.test_entities_and_plain_angles) ... ok
+test_fixed_notice_local_removal (test_exp1_preprocess.CleaningRulesTests.test_fixed_notice_local_removal) ... ok
+test_html_and_code (test_exp1_preprocess.CleaningRulesTests.test_html_and_code) ... ok
+test_incomplete_noise_boundary_retained (test_exp1_preprocess.CleaningRulesTests.test_incomplete_noise_boundary_retained) ... ok
+test_multiscenic_hotel_tickets_preserved (test_exp1_preprocess.CleaningRulesTests.test_multiscenic_hotel_tickets_preserved) ... ok
+test_publication_vs_trip_date (test_exp1_preprocess.CleaningRulesTests.test_publication_vs_trip_date) ... ok
+test_qunar_bounded_noise_retains_tail_article (test_exp1_preprocess.CleaningRulesTests.test_qunar_bounded_noise_retains_tail_article) ... ok
+test_route_and_punctuation (test_exp1_preprocess.CleaningRulesTests.test_route_and_punctuation) ... ok
+test_template_ads_not_all_recommendations (test_exp1_preprocess.CleaningRulesTests.test_template_ads_not_all_recommendations) ... ok
+test_whitespace_and_controls (test_exp1_preprocess.CleaningRulesTests.test_whitespace_and_controls) ... ok
+test_doc_id_conflict_all_excluded (test_exp1_preprocess.PipelineTests.test_doc_id_conflict_all_excluded) ... ok
+test_exact_duplicates_retained (test_exp1_preprocess.PipelineTests.test_exact_duplicates_retained) ... ok
+test_invalid_json_and_nonobject_tracked (test_exp1_preprocess.PipelineTests.test_invalid_json_and_nonobject_tracked) ... ok
+test_invalid_url_does_not_abort_batch (test_exp1_preprocess.PipelineTests.test_invalid_url_does_not_abort_batch) ... ok
+test_missing_empty_invalid_fields (test_exp1_preprocess.PipelineTests.test_missing_empty_invalid_fields) ... ok
+test_near_duplicates_retained (test_exp1_preprocess.PipelineTests.test_near_duplicates_retained) ... ok
+test_output_guard (test_exp1_preprocess.PipelineTests.test_output_guard) ... ok
+test_raw_text_and_csv_interface (test_exp1_preprocess.PipelineTests.test_raw_text_and_csv_interface) ... ok
+test_repeat_deterministic_backup_no_append (test_exp1_preprocess.PipelineTests.test_repeat_deterministic_backup_no_append) ... ok
+test_short_garbled_and_date_kept_for_review (test_exp1_preprocess.PipelineTests.test_short_garbled_and_date_kept_for_review) ... ok
+test_unpaired_surrogate_excluded_with_diagnostics (test_exp1_preprocess.PipelineTests.test_unpaired_surrogate_excluded_with_diagnostics) ... ok
+test_valid_fixture_distribution (test_exp1_preprocess.PipelineTests.test_valid_fixture_distribution) ... ok
+test_categories (test_exp2_analysis.AnalysisTests.test_categories) ... ok
+test_invalid_schema (test_exp2_analysis.AnalysisTests.test_invalid_schema) ... ok
+Building prefix dict from the default dictionary ...
+Dumping model to file cache D:\tourism-mining\.test_tmp\jieba.cache
+Loading model cost 1.132 seconds.
+Prefix dict has been built successfully.
+test_determinism (test_exp2_ner.EntityTests.test_determinism) ... ok
+test_dictionary_aliases (test_exp2_ner.EntityTests.test_dictionary_aliases) ... ok
+test_empty (test_exp2_ner.EntityTests.test_empty) ... ok
+test_exclusions (test_exp2_ner.EntityTests.test_exclusions) ... ok
+test_frozen_inputs (test_exp2_ner.EntityTests.test_frozen_inputs) ... ok
+test_invalid (test_exp2_ner.EntityTests.test_invalid) ... ok
+test_isolation (test_exp2_ner.EntityTests.test_isolation) ... ok
+test_iteration_boundaries (test_exp2_ner.EntityTests.test_iteration_boundaries) ... ok
+test_longest (test_exp2_ner.EntityTests.test_longest) ... ok
+test_numbers (test_exp2_ner.EntityTests.test_numbers) ... ok
+test_objects (test_exp2_ner.EntityTests.test_objects) ... ok
+test_offsets (test_exp2_ner.EntityTests.test_offsets) ... ok
+test_repeated (test_exp2_ner.EntityTests.test_repeated) ... ok
+test_seasons (test_exp2_ner.EntityTests.test_seasons) ... ok
+test_station (test_exp2_ner.EntityTests.test_station) ... ok
+test_time (test_exp2_ner.EntityTests.test_time) ... ok
+
+----------------------------------------------------------------------
+Ran 52 tests in 2.844s
+
+OK
+S01-O-001: needs_review (295 �ַ�)
+S01-O-001: needs_review (295 �ַ�)
+S01-O-001: needs_review (295 �ַ�)
+������ѱ���: D:\tourism-mining\.test_tmp\tmp85hqixxl\history\20261101T115546644196Z
+S01-O-001: needs_review (295 �ַ�)

@@ -1,0 +1,8 @@
+# 人工抽查填写说明
+本表必须由用户人工填写，机器未作正确性标注。实体表和片段表均完成后才可讨论优化。
+
+manual_label：correct（正确）、incorrect（误识别）、ambiguous（歧义）。error_type：none、false_positive、wrong_type、wrong_boundary、wrong_normalization、ambiguous。reason填写上下文依据；action填写keep、exclude_context、fix_boundary、fix_type、fix_normalization或needs_discussion。完成后review_status改为completed。
+
+边界检查：原文clean_text[start:end]必须等于text；start从0起，end不包含结束字符。结合上下文确认是否为当前景区内部POI、实际交通方式或时间表达。
+
+片段表需逐句阅读，不能只核对predicted_entities。漏识别填写missed_entities，同时在manual_missed_entities.csv中逐条填写，manual_confirmed使用yes/no，notes说明理由及原文绝对位置。无遗漏可填写“无”；manual_notes记录歧义、类型或边界问题，再将review_status改为completed。不要将小样本正确率推断为全量准确率。

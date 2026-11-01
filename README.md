@@ -240,3 +240,59 @@ python src/exp1_preprocess.py
 保留4篇复核：S01-T-001（平台整理和路线事实）、S02-O-002（原标题泛化）、S02-T-003（目标景区段落较短）、S03-T-005（气候综述及亲历日期不确定）。这些不是清洗导致的严重结构异常，均按冻结规则保留。技术验收通过不等于来源事实及历史价格已经独立核实。
 
 项目中未找到独立任务书、评分细则或小组docx，本次依据用户提供的冻结规则和本文九字段约定实现；不能声称已逐项核对不存在于工作区的评分原件。实验1交付完成后停止，不实现实体识别或后续实验。
+
+## 实验二第一步：三类实体识别（已完成）
+
+采用离线 Jieba 自定义词典、原文精确匹配与时间正则。POI仅匹配当前 scenic_id 的内部景点词典并映射标准名称和ID；TRANSPORT匹配交通词典并过滤站名后缀和玩具等语境；TIME包括季节、固定时段及数字日期、时刻、范围、持续时间，暂不归一化。重叠优先保留最长表达，每次出现分别记录，位置使用原始clean_text的左闭右开字符索引。
+
+配置：`config/poi_aliases.csv`、`config/transport_terms.csv`、`config/time_terms.txt`。输入：`data/processed/documents.csv`（UTF-8-SIG，18篇）。输出：`results/exp2/entities.json`（UTF-8数组），校验成功后原子替换。脚本通过自身路径定位项目，可从其他工作目录执行。
+
+在项目根目录运行：
+
+```powershell
+python -m pip install -r requirements.txt
+python -m unittest discover -s tests -v
+python src/exp2_ner.py
+```
+
+已完成词典识别、时间正则、稳定提及ID、批量导出和离线测试。待完成词频统计、路线抽取、共指消解、条件分析等后续阶段。当前规则依赖冻结词典覆盖范围；交通歧义采用局部后缀规则，复杂否定、引用和跨句语境仍需后续人工评估；不推测词典之外的景点，不进行时间归一化。
+
+## 实验二第二步：prepare（历史阶段说明）
+
+安装依赖后运行 `python src/exp2_analysis.py prepare`。统计只读取实体JSON及clean_text，不重新识别或清洗数据。首次冻结entities_before.json并记录SHA256、源文件修改时间和冻结时间；后续运行校验哈希，保留已填写的人工表。
+
+输出位于results/exp2：frequency_before内6份UTF-8-SIG CSV；charts_before内7张300 DPI中文横向柱状图；manual_review.csv内18条分层实体样例；manual_review_snippets.csv内6个独立原文片段；manual_missed_entities.csv为空漏识别模板。填写方法见manual_review_guide.md，阶段结果见optimization_report.md。
+
+POI按景区和poi_id汇总，缺失ID依次回退标准名和原文；TRANSPORT按标准名汇总；TIME按原文汇总。CSV按景区分组，跨景区交通与时间图合计次数。每千字频次的分母是该景区全部文档clean_text字符数。TIME分类优先级：范围、具体时刻、日期、相对日期、持续时间、时间段、季节及旅游时期、其他。混合表达按最高优先级归类。
+
+config/visualization_stopwords.txt仅影响图表，当前无过滤词；config/entity_exclusions.csv为空的人工证据规则模板，本次不参与识别。固定抽样种子20261101；优先不同文档及官方/游客来源。prepare不会生成优化后文件。请完成两份人工表后再继续优化；当前入口仅支持prepare。
+
+
+## 实验二第二步：人工抽查与迭代
+实体抽查18/18正确，不代表全量准确率；六段原文问题单独记录。鸣春谷别名统一，保留景区大门和具体交通线路；补充月份、星期范围，修复小数尾部时间误匹配。
+冻结结果results/exp2/entities_before.json；第二轮entities_after.json和正式entities.json；统计frequency_before/、frequency_after/，图表charts_before/、charts_after/。详情见results/exp2/optimization_report.md。
+POI按景区与ID，交通按canonical_name，TIME按原文统计，同时输出提及数、文档频率及每千字频率（景区全部clean_text总字符数作分母）。展示停用词与实体排除规则分开管理。
+运行：`python -m src.exp2_ner`；将经校验的正式结果保存为entities_after.json后运行`python -m src.exp2_analysis after`。不要重跑prepare覆盖第一轮统计。
+测试：`python -m unittest discover -s tests -v`。Windows临时目录权限受限时，将TEMP和TMP设置为项目内.test_tmp。
+
+
+## 实验二第三步：正式规范与成果索引
+
+实验二目标为识别旅游文本中的POI、TRANSPORT、TIME，采用离线Jieba、自定义词典和正则规则。上述prepare段落记录第一轮历史状态；人工抽查与第二轮迭代现已完成，当前分析入口支持prepare和after。词频统计已完成，路线抽取等不属于本次交付。
+
+| 成果 | 路径 |
+|---|---|
+| 正式定义规范 | `results/exp2/entity_definition_standards.md`、`results/exp2/entity_definition_standards.csv` |
+| 词典配置 | `config/poi_aliases.csv`、`config/transport_terms.csv`、`config/time_terms.txt` |
+| 识别与统计程序 | `src/exp2_ner.py`、`src/exp2_analysis.py` |
+| 正式JSON | `results/exp2/entities.json`（与entities_after.json一致，1551条） |
+| 两轮JSON | `results/exp2/entities_before.json`、`results/exp2/entities_after.json` |
+| 两轮词频 | `results/exp2/frequency_before/`、`results/exp2/frequency_after/`（各6份CSV） |
+| 两轮图表 | `results/exp2/charts_before/`、`results/exp2/charts_after/`（各7张） |
+| 人工抽查 | `results/exp2/manual_review.csv`、`results/exp2/manual_review_snippets.csv`、`results/exp2/manual_missed_entities.csv` |
+| 人工原始备份 | `results/exp2/manual_review_original/` |
+| 优化报告 | `results/exp2/optimization_report.md` |
+
+安装：`python -m pip install -r requirements.txt`。既有识别入口：`python src/exp2_ner.py`；第二轮统计入口：`python src/exp2_analysis.py after`（读取已有entities_after.json）。本次仅整理规范和读取验收，没有执行这两个生成命令；历史成果应保护，不为验收重跑生成流程。
+
+测试：`python -m unittest discover -s tests -v`。如Windows系统临时目录权限受限，可先在项目内创建.test_tmp并将TEMP和TMP指向其绝对路径。本阶段完成后停止，不进入实验三。
